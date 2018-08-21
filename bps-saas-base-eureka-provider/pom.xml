@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.tony.saas</groupId>
-	<artifactId>bps-saas-base-eureka</artifactId>
+	<artifactId>bps-saas-base-eureka-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>bps-saas-base-eureka</name>
+	<name>bps-saas-base-eureka-provider</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -28,12 +28,17 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-cloud-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
